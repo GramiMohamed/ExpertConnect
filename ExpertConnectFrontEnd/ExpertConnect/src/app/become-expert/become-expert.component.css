@@ -1,0 +1,179 @@
+/* General body styling for vertical and horizontal centering */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;    /* Center content horizontally */
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('./image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand span {
+  font-weight: bold;
+  color: #fff;
+}
+.navbar .btn {
+  background-color: #4d4545;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar .btn:hover {
+  background-color: #333;
+}
+
+/* Form Container */
+/* Form Container */
+.container {
+  max-width: 600px;  /* Réduit la largeur maximale */
+  padding: 20px;  /* Réduit le padding pour un container plus compact */
+  background-color: rgba(255, 255, 255, 0.85); /* Fond légèrement transparent */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;  /* Décalage pour la barre de navigation fixe */
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Labels and Input Fields */
+.container .form-group {
+  width: 100%; /* Ensure full-width layout */
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+.container .form-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.container .form-control,
+.container textarea {
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;  /* Full width for inputs */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.container .form-control:focus,
+.container textarea:focus {
+  border-color: #e8b2f2; /* Focus state highlight */
+  outline: none;
+}
+
+textarea {
+  height: 120px; /* Set height for textarea */
+}
+
+/* File Upload Styling */
+.container .file-upload input[type="file"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #e8b2f2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%; /* Full width button */
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d190d0;
+}
+
+/* Text Center (Links for sign up or other) */
+.container .text-center {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.container .text-center a {
+  text-decoration: none;
+  color: #e8b2f2;
+}
+
+.container .text-center a:hover {
+  color: #d190d0;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around; /* Distribute elements evenly */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f3f3f3;
+  padding: 20px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: center;
+}
+footer a {
+  color: #f3f3f3;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #d190d0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar .d-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .navbar .btn {
+      width: 100%;
+      margin: 5px 0;
+  }
+  .container {
+      margin: 20px;
+      padding: 20px;
+  }
+  footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+}

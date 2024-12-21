@@ -1,0 +1,124 @@
+/* Body Styling */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url('./image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand span {
+  font-weight: bold;
+  color: #fff;
+}
+.navbar .btn {
+  background-color: #4d4545;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar .btn:hover {
+  background-color: #333;
+}
+.navbar .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  margin-top: 75px;
+  max-width: 800px;
+  background-color: rgba(255, 254, 254, 0.7);
+  padding: 30px;
+  color: #18191a;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1{
+  margin-bottom: 10px ;
+  color: rgb(191, 13, 185);
+  font-family: initial;
+}
+h2{
+  color: rgb(191, 13, 185);
+  font-family: initial;
+}
+
+
+.dashboard-container h1 {
+
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.dashboard-container p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.services-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.container {
+  color: #18191a;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.actions-container .btn {
+  background-color: #4d4545;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.actions-container .btn:hover {
+  background-color: #d194d9;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around; /* Distribute elements evenly */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f3f3f3;
+  padding: 20px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: center;
+}
+footer a {
+  color: #f3f3f3;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #d190d0;
+}

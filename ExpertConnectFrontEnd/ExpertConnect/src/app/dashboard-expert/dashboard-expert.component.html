@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dashboard-expert-container {
+        text-align: center;
+        margin: 50px auto;
+        max-width: 600px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #f9f9f9;
+      }
+
+      .dashboard-expert-container h1 {
+        font-size: 2em;
+        color: #4a4a4a;
+      }
+
+      .actions button {
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #6c63ff;
+        color: white;
+        font-size: 1em;
+        transition: background-color 0.3s;
+      }
+
+      .actions button:hover {
+        background-color: #5849d8;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="dashboard-expert-container">
+      <h1>Welcome, {{ expertName }}!</h1>
+      <p>You are now logged in as an expert.</p>
+
+      <div class="actions">
+        <button (click)="viewConsultations()">View Consultations</button>
+        <button (click)="manageProfile()">Manage Profile</button>
+      </div>
+    </div>
+  </body>
+</html>

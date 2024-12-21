@@ -1,0 +1,119 @@
+/* General body styling for vertical and horizontal centering */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;    /* Center content horizontally */
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('./image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand span {
+  font-weight: bold;
+  color: #fff;
+}
+.navbar .btn {
+  background-color: #4d4545;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar .btn:hover {
+  background-color: #333;
+}
+.navbar .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  flex-direction: column; /* Ensure elements are stacked */
+  justify-content: center;
+  align-items: center; /* Center form elements horizontally */
+  margin-top: 120px; /* Adjust for fixed navbar */
+}
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #495057;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #e8b2f2;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #d190d0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around; /* Distribute elements evenly */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f3f3f3;
+  padding: 20px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: center;
+}
+footer a {
+  color: #f3f3f3;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #d190d0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar .d-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .navbar .btn {
+      width: 100%;
+      margin: 5px 0;
+  }
+  .container {
+      margin: 20px;
+      padding: 20px;
+  }
+  footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+}
